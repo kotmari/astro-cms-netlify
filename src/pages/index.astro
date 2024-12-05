@@ -1,0 +1,49 @@
+---
+import Avatar from "@components/Avatar.astro";
+import FeaturedCard from "@components/FeaturedCard.astro";
+import Link from "@components/Link.astro";
+import Social from "@components/Social.astro";
+import FeaturedCardsLayouts from "@layouts/FeaturedCardsLayouts.astro";
+import Layout from "@layouts/Layout.astro";
+import LinksLayouts from "@layouts/LinksLayouts.astro";
+
+---
+
+<Layout title="Astro LInkTree Clone">
+	<Avatar />
+	<FeaturedCardsLayouts>
+		<FeaturedCard
+			featuredCardIcon="Twitter"
+			featuredCardTitle="Support Us!"
+			featuredCardLink="twittwr">
+		</FeaturedCard>
+		<FeaturedCard
+		featuredCardIcon="linkedin"
+		featuredCardTitle="Support Us!"
+		featuredCardLink="twittwr">
+	</FeaturedCard>
+	<FeaturedCard
+	featuredCardIcon="fb"
+	featuredCardTitle="Support Us!"
+	featuredCardLink="twittwr">
+</FeaturedCard>
+	</FeaturedCardsLayouts>
+	<LinksLayouts>
+		<Link 
+		linkTitle = 'Astro' 
+		linkDescription = 'Astro Homepage'
+		linkUrl = 'https://www.astro.build' 
+		/>
+		<Link 
+		linkTitle = 'Astro' 
+		linkDescription = 'Astro Homepage'
+		linkUrl = 'https://www.astro.build' 
+		/>
+		<Link 
+		linkTitle = 'Astro' 
+		linkDescription = 'Astro Homepage'
+		linkUrl = 'https://www.astro.build' 
+		/>
+	</LinksLayouts>
+	<Social />
+</Layout>
